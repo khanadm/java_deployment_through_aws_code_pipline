@@ -116,6 +116,11 @@ In my case i have allready install so it is showing in Installed Plugin
 ![aws codepipeline](https://user-images.githubusercontent.com/106643382/219024446-c2099a61-b8d4-48a1-b2f3-df3001ec4b62.png "aws codepipeline")
 
 
+Also we need Maven Build the application 
+
+![Maven plugin](https://user-images.githubusercontent.com/106643382/219026145-bd9303f2-5007-4dfb-9279-483cb0143bc1.png "Maven plugin")
+
+
 
 
 #### Now let's come on to next server and Insatll & Configure Tomcat
