@@ -126,28 +126,50 @@ Create a free style project
 ![Screenshot from 2023-02-15 18-11-12](https://user-images.githubusercontent.com/106643382/219030171-6edc755c-d4cb-4ca8-9343-afdce9b90633.png)
 
 
+
 ![Screenshot from 2023-02-15 18-11-39](https://user-images.githubusercontent.com/106643382/219030210-4a63f84e-620e-4de4-8bdd-889921b49596.png)
+
+
 
 ![Screenshot from 2023-02-15 18-12-38](https://user-images.githubusercontent.com/106643382/219030375-a1af371c-a8b8-4987-b9a7-7c1d6fba8329.png)
 
+
 ![Screenshot from 2023-02-15 18-12-50](https://user-images.githubusercontent.com/106643382/219030397-5053f4ce-2c1b-476d-b7e1-97162f10586f.png)
+
+
 
 ![Screenshot from 2023-02-15 18-13-35](https://user-images.githubusercontent.com/106643382/219030499-dfbe0d94-0cd8-4c6c-b71a-dd7a11c4ed09.png)
 
+
+
 ![Screenshot from 2023-02-15 18-16-20](https://user-images.githubusercontent.com/106643382/219031081-5e40bbce-e824-4f53-9457-ddcb86bdbcf6.png)
+
+
 
 ![Screenshot from 2023-02-15 18-16-54](https://user-images.githubusercontent.com/106643382/219031190-cf691afd-8b35-4185-91d8-fd4611aa4798.png)
 
+
+
 ![Screenshot from 2023-02-15 18-17-29](https://user-images.githubusercontent.com/106643382/219031329-1596206a-8e0c-4a1b-a24c-70781c658a9a.png)
+
+
 
 ![Screenshot from 2023-02-15 18-18-14](https://user-images.githubusercontent.com/106643382/219031496-628d6ad5-a295-4268-882b-0be094baddf4.png)
 
+
+
 ![Screenshot from 2023-02-15 18-18-42](https://user-images.githubusercontent.com/106643382/219031582-51c0647d-8675-49d6-82b9-f3a9572aa035.png)
+
+
 
 ![Screenshot from 2023-02-15 18-19-29](https://user-images.githubusercontent.com/106643382/219031751-7b23ecab-a285-44e8-930c-e7b1f1b63849.png)
 
 
+
+
 #### Now let's come on to next server and Insatll & Configure Tomcat
+
+
 
 
 First login to by ssh &  run this command
@@ -277,7 +299,64 @@ cd /opt/apache-tomcat-8.5.84/bin
 
 
 
- 
+ #### Now create a pipeline in aws 
+
+Go aws console type in search bar code pipeline you will get create pipeline 
+
+
+
+![codepipeline](https://user-images.githubusercontent.com/106643382/219033944-4321000f-5c8a-40d5-8fb0-13f9db6fb5b0.png "codepipeline")
+
+
+
+![source code](https://user-images.githubusercontent.com/106643382/219034343-90157aab-4485-4b6f-9291-0297ce420242.png "source code")
+
+
+
+![code build](https://user-images.githubusercontent.com/106643382/219034969-49304f53-7f26-4b18-b177-19606b14872f.png "code build")
+
+
+
+![code deploy](https://user-images.githubusercontent.com/106643382/219035389-d5fd4a45-7cde-44e5-b187-e01bb7a71f43.png "code deploy")
+
+
+
+![codecommit](https://user-images.githubusercontent.com/106643382/219035856-841065b3-e44c-4b04-be91-fc147494c8a2.png "codecommit")
+
+
+
+![code build](https://user-images.githubusercontent.com/106643382/219036008-06f255bf-47be-48d4-a06d-27e554bb77ec.png "code build")
+
+
+
+![code deploy](https://user-images.githubusercontent.com/106643382/219036408-99bed298-55cb-4d15-9f52-be51e54af552.png "code deploy")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
