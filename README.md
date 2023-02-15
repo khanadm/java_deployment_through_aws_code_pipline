@@ -5,7 +5,7 @@
 - Take sample JAVA application .
 - Create a aws pipeline and deploy application .
 - Build JAVA application from jenkins .
-- JAVA application need web application to deploy (we use tomcat as web application) .
+- JAVA application need web application to deploy (we use tomcat as web application to deploy the .war files).
 
 #### First step: Create an 2 EC2 server one for jenkins and second is for tomcat .
 
@@ -173,7 +173,8 @@ Now take a backup of file
 cp tomcat-users.xml tomcat-users.xml.bck
 ```
 
-Then open tomcat-users.xml  file delete everything  and past this 
+We need to define manager-gui role for deployment & also created a user "tomcat". To do this  open tomcat-users.xml  file delete everything  
+and past this .  
 
 
 ```<?xml version="1.0" encoding="UTF-8"?>
@@ -183,6 +184,80 @@ Then open tomcat-users.xml  file delete everything  and past this
   <user username="tomcat" password="tomcat" roles="manager-gui"/>
 </tomcat-users>
 ```
+
+Ok Now we need to allow localhost to access tomcat using gui method .
+
+
+This will allow tomcat to be accessed from any machine, if we want to grant access to specific IP then use the below value instead 
+of allow="^.*$"/>
+
+
+Go to this location 
+
+
+```
+cd /opt/apache-tomcat-8.5.84/conf/Catalina/localhost
+```
+
+In this location we have create a file 
+
+```touch manager.xml
+```
+
+Now open file add this  
+
+```
+vim manager.xml
+```
+
+
+```
+<Context privileged="true" antiResourceLocking="false"
+          docBase="${catalina.home}/webapps/manager">
+         <Valve className="org.apache.catalina.valves.RemoteAddrValve" allow="^.*$"/>
+        </Context>
+```
+
+To save type esc then : then wq  then Enter it will save 
+
+Now it's time to run tomcat 
+
+Change directory 
+
+```
+cd /opt/apache-tomcat-8.5.84/bin
+```
+
+```
+./startup.sh
+```
+
+![Tomcta](https://user-images.githubusercontent.com/106643382/219023072-9cc732be-e637-481d-a35b-c376b707bcff.png "Tomcat")
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
