@@ -106,6 +106,18 @@ Now again search for **INSTANCE_PUBLIC_IP:8080** form any browser and enter user
 
 
 
+We need plugin while using aws codepipeline
+
+
+Go to Manage jenkkins then Manage Plugin in there Avaliable Plugin in search bar type aws code pipeline
+
+In my case i have allready install so it is showing in Installed Plugin 
+
+![aws codepipeline](https://user-images.githubusercontent.com/106643382/219024446-c2099a61-b8d4-48a1-b2f3-df3001ec4b62.png "aws codepipeline")
+
+
+
+
 #### Now let's come on to next server and Insatll & Configure Tomcat
 
 
