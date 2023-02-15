@@ -121,6 +121,18 @@ Also we need Maven Build the application
 ![Maven plugin](https://user-images.githubusercontent.com/106643382/219026145-bd9303f2-5007-4dfb-9279-483cb0143bc1.png "Maven plugin")
 
 
+Create a free style project 
+
+![Screenshot from 2023-02-15 18-11-12](https://user-images.githubusercontent.com/106643382/219030171-6edc755c-d4cb-4ca8-9343-afdce9b90633.png)
+
+
+![Screenshot from 2023-02-15 18-11-39](https://user-images.githubusercontent.com/106643382/219030210-4a63f84e-620e-4de4-8bdd-889921b49596.png)
+
+![Screenshot from 2023-02-15 18-12-38](https://user-images.githubusercontent.com/106643382/219030375-a1af371c-a8b8-4987-b9a7-7c1d6fba8329.png)
+
+![Screenshot from 2023-02-15 18-12-50](https://user-images.githubusercontent.com/106643382/219030397-5053f4ce-2c1b-476d-b7e1-97162f10586f.png)
+
+![Screenshot from 2023-02-15 18-13-35](https://user-images.githubusercontent.com/106643382/219030499-dfbe0d94-0cd8-4c6c-b71a-dd7a11c4ed09.png)
 
 
 #### Now let's come on to next server and Insatll & Configure Tomcat
