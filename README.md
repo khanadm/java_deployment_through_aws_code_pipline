@@ -134,6 +134,18 @@ Create a free style project
 
 ![Screenshot from 2023-02-15 18-13-35](https://user-images.githubusercontent.com/106643382/219030499-dfbe0d94-0cd8-4c6c-b71a-dd7a11c4ed09.png)
 
+![Screenshot from 2023-02-15 18-16-20](https://user-images.githubusercontent.com/106643382/219031081-5e40bbce-e824-4f53-9457-ddcb86bdbcf6.png)
+
+![Screenshot from 2023-02-15 18-16-54](https://user-images.githubusercontent.com/106643382/219031190-cf691afd-8b35-4185-91d8-fd4611aa4798.png)
+
+![Screenshot from 2023-02-15 18-17-29](https://user-images.githubusercontent.com/106643382/219031329-1596206a-8e0c-4a1b-a24c-70781c658a9a.png)
+
+![Screenshot from 2023-02-15 18-18-14](https://user-images.githubusercontent.com/106643382/219031496-628d6ad5-a295-4268-882b-0be094baddf4.png)
+
+![Screenshot from 2023-02-15 18-18-42](https://user-images.githubusercontent.com/106643382/219031582-51c0647d-8675-49d6-82b9-f3a9572aa035.png)
+
+![Screenshot from 2023-02-15 18-19-29](https://user-images.githubusercontent.com/106643382/219031751-7b23ecab-a285-44e8-930c-e7b1f1b63849.png)
+
 
 #### Now let's come on to next server and Insatll & Configure Tomcat
 
