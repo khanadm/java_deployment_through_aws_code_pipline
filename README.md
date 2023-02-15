@@ -2,10 +2,10 @@
 
 #### Description:
  
-- Take sample  application 
-- Create a aws pipeline and deploy application
-- Build JAVA application from jenkins
-- JAVA application need web application to deploy (we use tomcat as web application)
+- Take sample JAVA application .
+- Create a aws pipeline and deploy application .
+- Build JAVA application from jenkins .
+- JAVA application need web application to deploy (we use tomcat as web application) .
 
 #### First step: Create an 2 EC2 server one for jenkins and second is for tomcat .
 
@@ -19,7 +19,7 @@
   - Take the public IP from the EC2 dashboard and use it to login inside the instance using ssh.
   - Finally, it will be logged in successfully if everything is configured correctly.
 
-let's insatll jenkins 
+#### let's Insatll jenkins & configure it. 
 
 
 First login to by ssh &  run this command
@@ -73,10 +73,124 @@ can be accessed using **INSTANCE_PUBLIC_IP:8080**
 
 Now try to hit ```<INSTANCE_PUBLIC_IP>:8080```
 
+
 In this location we will get admin password 
 
 
   ```sudo cat /var/lib/jenkins/secrets/initialAdminPassword```
+
+
+Now, its asking to install plugins but we don't want to install so click on cancel
+
+
+then click **start using jenkins**
+
+
+As we have cancelled to install jenkins plugins so it also cancelled setting admin password. So we need to set admin password else if we 
+logout we won't be able to login again.
+
+
+So let's create/change admin password. For this click **Manage Jenkins** then in Security section click **Manage Users**
+
+
+Now click on setting button of admin user
+
+
+Scroll down and look for password section then enter password that you want and click **Save**
+
+
+Now again search for **INSTANCE_PUBLIC_IP:8080** form any browser and enter username and password
+
+
+![jenkins](https://user-images.githubusercontent.com/106643382/218965016-90d15201-a411-44b8-8891-70aca2a50133.png "jenkins")
+
+
+
+#### Now let's come on to next server and Insatll & Configure Tomcat
+
+
+First login to by ssh &  run this command
+
+
+ ```sh
+    sudo apt-get update
+   ``` 
+
+Then we need to Download tar.gz of Tomcat from offical page for that we need copy the url run this command 
+
+
+```
+wget https://downloads.apache.org/tomcat/tomcat-8/v8.5.85/bin/apache-tomcat-8.5.85.tar.gz.sha512
+```
+ 
+we need to extract under /opt/ directory
+
+```
+tar xvzf apache-tomcat-8.5.84.tar.gz -C /opt/
+```
+
+To see go to
+ 
+ ```
+cd /opt/
+```
+Then we need to create a user for tomcat 
+
+```
+useradd tomcat
+```
+ 
+ ```
+passwd tomcat
+```
+then change the ownership
+
+```
+chown -R tomcat:tomcat /opt/apache-tomcat-8.5.84
+```
+
+Now it's time to login in tomcat user
+ 
+```
+su - tomcat
+``` 
+ 
+Under the main confiuration file we need create a application user for that fisrt take a backup of file 
+
+
+Go to the particular directory by running this command 
+
+
+ ```
+cd /opt/apache-tomcat-8.5.84/conf
+```
+
+Now take a backup of file 
+
+
+
+```
+cp tomcat-users.xml tomcat-users.xml.bck
+```
+
+Then open tomcat-users.xml  file delete everything  and past this 
+
+
+```<?xml version="1.0" encoding="UTF-8"?>
+<tomcat-users>
+
+  <role rolename="manager-gui"/>
+  <user username="tomcat" password="tomcat" roles="manager-gui"/>
+</tomcat-users>
+```
+
+
+
+
+
+
+
+
 
 
 
