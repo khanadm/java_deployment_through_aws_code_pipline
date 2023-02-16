@@ -333,86 +333,9 @@ Go aws console type in search bar code pipeline you will get create pipeline
 
 
 
+Now release the pipeline. When your pipeline is success it will show like this 
 
+![Successful pipeline](https://user-images.githubusercontent.com/106643382/219276474-6751635a-561f-4d6c-8f85-3d9e87d36cbf.png "Successful pipeline")
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+ #### THANK YOU :)
